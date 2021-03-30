@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html id="html-cls">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title> Gakken Teacher Dashboard </title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker3.min.css" />
+    
+    <link href="stylesheets/screen.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light blue-top">
+        <div class="container-lg container-fluid">
+            <a class="navbar-brand padding-half d-inline-block" href="#">
+                <img src="assets/images/logo.png" class="small-logo" /> </a>
+            <a class="navbar-brand border-left padding-half d-inline-block" href="#">
+                <img src="assets/images/co-logo.png" class="small-logo" /> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse row justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav row align-items-center">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-bell notifications"> </i>
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle user row align-items-center" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <h6 class="padding-half"> FirstName Last </h6>
+                            <img src="assets/images/user-profile.png" height="30px" class="rounded-circle"
+                            />
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <a class="dropdown-item" href="#!">Action</a>
+                            <a class="dropdown-item" href="#!">Another action</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="content" class="grey-bg">
+        <div class="row no-gutters align-content-stretch min-100">
+            <div class="col-lg-2 col-md-3 dashboard-sidebar dashboard-sidebar-bg">
+                <ul>
+                    <li> <a href="#"> <i class="fa fa-eye"> </i> Summary </a></li>
+                    <li>
+                        <a href="#"> <i class="fa fa-clipboard-list"> </i> Atur Bahan Ajar </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-file"> </i> Tugas Mahasiswa </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-question-circle"> </i> Tes Soal </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-comment"> </i> Forum Diskusi Umum </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-comments"> </i> Forum Diskusi Dosen </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-folder"> </i> Direktori Saya </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-user-circle"> </i> Daftar Mahasiswa </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-user-plus"> </i> Daftar Dosen </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-9 col-lg-10 padding-tb-2 ">
+                <div class="d-block padding-2 text-left">
+                    <a href="#" class="link primary-link"> <i class="fa fa-angle-left"> </i> Kembali </a>
+
+                    <div class="border-box box-shadow white-bg border-radius padding-1">
+                        <div class="padding-tb-2">
+                            <div class="border-box border-radius white-bg box-shadow">
+                                <div class="row margin-reset padding-reset">
+                                    <div class="d-inline-block padding-1">
+                                        <img src="assets/images/quiz-icon.png" height="50px" />
+                                    </div>
+                                    <div class="col padding-1">
+                                        <h4 class="strong"> Kuis Matkul 1 </h4>
+                                        <p> Created by Who, when </p>
+                            
+                                        <div class="row padding-reset margin-reset padding-tb-half">
+                                            <p class="d-inline-block"> Mahasiswa Tuntas
+                                                <span class="d-inline-block strong"> 3 / 34 </span>
+                                            </p>
+
+                                            <p class="d-inline-block"> Jumlah Mahasiswa Yang Telah Diperiksa
+                                                <span class="d-inline-block strong"> 3 / 34 </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="col-md d-flex-column text-right padding-1 justify-content-end">
+                                        <table class="w-100">
+                                            <tr>
+                                                <td class="text-right padding-tb-half">
+                                                    Status
+                                                </td>
+                                                <td class="text-right padding-tb-half">
+                                                    Selesai
+                                                </td>
+                                            </tr>
+                            
+                                            <tr>
+                                                <td class="text-right paddiing-tb-half">
+                                                    Rata-rata nilai
+                                                </td>
+                            
+                                                <td class="marks default text-right paddiing-tb-half">
+                                                    A
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                            
+                                </div>
+                            
+                            
+                            </div>
+                        </div>
+                        
+
+                        <div class="border-top border-bottom-list">
+                            <h4 class="padding-tb-1 strong"> Daftar Mahasiswa </h4>
+                            <ul>
+                                <li class="row padding-1 margin-reset align-items-center">
+                                    <div class="d-inline-block">
+                                        <img src="assets/images/user-profile.png" height="38px" class="rounded-circle"/>
+                                    </div>
+                                    <div class="col-md">
+                                        <h4 class="strong"> Chase Floyd </h4>
+                                        <p class="small"> D3112212232</p>
+                                    </div>
+
+                                    <div class="col-md">
+                                        <p> Status : Belum diperiksa </p>
+                                    </div>
+
+                                    <div class="col-md d-flex flex-column text-center">
+                                        <p> Result </p>
+                                        <p class="marks default"> - </p>
+                                    </div>
+
+                                    <div class="col-md text-center">
+                                        <button class="c-btn c-default-btn align-self-end box-shadow">
+                                            Periksa
+                                        </button>
+                                    </div>
+                                </li>
+
+                                <li class="row padding-1 margin-reset align-items-center">
+                                    <div class="d-inline-block">
+                                        <img src="assets/images/user-profile.png" height="38px" class="rounded-circle"/>
+                                    </div>
+                                    <div class="col-md">
+                                        <h4 class="strong"> Chase Floyd </h4>
+                                        <p class="small"> D3112212232</p>
+                                    </div>
+                                
+                                    <div class="col-md">
+                                        <p> Status : Belum diperiksa </p>
+                                    </div>
+                                
+                                    <div class="col-md d-flex flex-column text-center">
+                                        <p> Result </p>
+                                        <p class="marks default"> - </p>
+                                    </div>
+                                
+                                    <div class="col-md text-center">
+                                        <button class="c-btn c-default-btn align-self-end box-shadow">
+                                            Periksa
+                                        </button>
+                                    </div>
+                                </li>
+
+                                <li class="row padding-1 margin-reset align-items-center">
+                                    <div class="d-inline-block">
+                                        <img src="assets/images/user-profile.png" height="38px" class="rounded-circle"/>
+                                    </div>
+                                    <div class="col-md">
+                                        <h4 class="strong"> Chase Floyd </h4>
+                                        <p class="small"> D3112212232</p>
+                                    </div>
+                                
+                                    <div class="col-md">
+                                        <p> Status : Belum diperiksa </p>
+                                    </div>
+                                
+                                    <div class="col-md d-flex flex-column text-center">
+                                        <p> Result </p>
+                                        <p class="marks default"> A </p>
+                                    </div>
+                                
+                                    <div class="col-md text-center">
+                                        <button class="c-btn tertiary-btn align-self-end box-shadow">
+                                            Cek Ulang
+                                        </button>
+                                    </div>
+                                </li>
+
+                                <li class="row padding-1 margin-reset align-items-center">
+                                    <div class="d-inline-block">
+                                        <img src="assets/images/user-profile.png" height="38px" class="rounded-circle" />
+                                    </div>
+                                    <div class="col-md">
+                                        <h4 class="strong"> Chase Floyd </h4>
+                                        <p class="small"> D3112212232</p>
+                                    </div>
+                                
+                                    <div class="col-md">
+                                        <p> Status : Belum diperiksa </p>
+                                    </div>
+                                
+                                    <div class="col-md d-flex flex-column text-center">
+                                        <p> Result </p>
+                                        <p class="marks default"> - </p>
+                                    </div>
+                                
+                                    <div class="col-md text-center">
+                                        <button class="c-btn c-default-btn align-self-end box-shadow">
+                                            Periksa
+                                        </button>
+                                    </div>
+                                </li>
+                                
+                                <li class="row padding-1 margin-reset align-items-center">
+                                    <div class="d-inline-block">
+                                        <img src="assets/images/user-profile.png" height="38px" class="rounded-circle" />
+                                    </div>
+                                    <div class="col-md">
+                                        <h4 class="strong"> Chase Floyd </h4>
+                                        <p class="small"> D3112212232</p>
+                                    </div>
+                                
+                                    <div class="col-md">
+                                        <p> Status : Belum diperiksa </p>
+                                    </div>
+                                
+                                    <div class="col-md d-flex flex-column text-center">
+                                        <p> Result </p>
+                                        <p class="marks default"> A </p>
+                                    </div>
+                                
+                                    <div class="col-md text-center">
+                                        <button class="c-btn tertiary-btn align-self-end box-shadow">
+                                            Cek Ulang
+                                        </button>
+                                    </div>
+                                </li>
+
+                                <li class="row padding-1 margin-reset align-items-center">
+                                    <div class="d-inline-block">
+                                        <img src="assets/images/user-profile.png" height="38px" class="rounded-circle" />
+                                    </div>
+                                    <div class="col-md">
+                                        <h4 class="strong"> Chase Floyd </h4>
+                                        <p class="small"> D3112212232</p>
+                                    </div>
+                                
+                                    <div class="col-md">
+                                        <p> Status : Belum diperiksa </p>
+                                    </div>
+                                
+                                    <div class="col-md d-flex flex-column text-center">
+                                        <p> Result </p>
+                                        <p class="marks default"> - </p>
+                                    </div>
+                                
+                                    <div class="col-md text-center">
+                                        <button class="c-btn c-default-btn align-self-end box-shadow">
+                                            Periksa
+                                        </button>
+                                    </div>
+                                </li>
+                                
+                                <li class="row padding-1 margin-reset align-items-center">
+                                    <div class="d-inline-block">
+                                        <img src="assets/images/user-profile.png" height="38px" class="rounded-circle" />
+                                    </div>
+                                    <div class="col-md">
+                                        <h4 class="strong"> Chase Floyd </h4>
+                                        <p class="small"> D3112212232</p>
+                                    </div>
+                                
+                                    <div class="col-md">
+                                        <p> Status : Belum diperiksa </p>
+                                    </div>
+                                
+                                    <div class="col-md d-flex flex-column text-center">
+                                        <p> Result </p>
+                                        <p class="marks default"> A </p>
+                                    </div>
+                                
+                                    <div class="col-md text-center">
+                                        <button class="c-btn tertiary-btn align-self-end box-shadow">
+                                            Cek Ulang
+                                        </button>
+                                    </div>
+                                </li>
+
+
+                            </ul>
+
+                            <div class="loading-wrap align-items-center justify-content-center row padding-tb-2">
+                                <div class="loader"></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.min.js"></script>
+
+    <script>
+        function openNav() {
+            document.getElementById("navbar-expand").style.display = "block";
+            document.getElementById("navbar-expand").classList.add("show");
+        }
+
+
+        function closeNav() {
+            document.getElementById("navbar-expand").style.display = "none";
+            document.getElementById("navbar-expand").classList.remove("show");
+        }
+        
+        $('.datepicker').datepicker({
+                format: 'dd-mm-yyyy',
+                language: 'en'
+            });
+    </script>
+
+</body>
+
+</html>

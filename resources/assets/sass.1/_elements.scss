@@ -1,0 +1,14 @@
+.list-group {
+  .list-group-item {
+    &.list-group-item-action {
+      transition: background 0.2s ease-out;
+    }
+  }
+}
+
+.btn {
+  &.btn-primary {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1.4px;
+  }
+}

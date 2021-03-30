@@ -1,0 +1,7 @@
+export { default as Home } from './Home'
+export { default as Profile } from './Profile'
+export { default as Classroom } from './Classroom'
+export { default as Teachable } from './Teachable'
+export { default as Participant } from './Participant'
+export { default as CreateTeachable } from './CreateTeachable'
+export { default as EditTeachable } from './EditTeachable'

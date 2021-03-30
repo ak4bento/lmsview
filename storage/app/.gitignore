@@ -1,0 +1,5 @@
+*
+!public/
+!example-files/
+!example-avatars/
+!.gitignore

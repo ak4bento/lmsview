@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html id="html-cls">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title> Gakken Login Page </title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+            crossorigin="anonymous">
+    <link href="stylesheets/screen.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <section id="login-page">
+        <div class="row no-gutters align-content-stretch max-height">
+            <div class="col-lg-5 col-12 register-bg">
+                <a href="#" class="d-block align-self-start padding-1"> <img src="assets/images/logo.png" class="small-logo" height="60px" /> </a>
+            </div>
+
+            <div class="col-lg-7 col-12">
+                <a href="#" class="d-block default-link padding-1"> <i class="fa fa-angle-left"> </i> Back to Homepage </i> </a>
+                <div class="row margin-reset justify-content-center align-items-center "> 
+                    <div class="wrapper col-lg-5 col-md-7 margin-reset padding-tb-4">
+                        <div class="header text-center  padding-tb-2 padding-lr-1">
+                            <h2> <strong> Start Learning </strong></h2>
+                            <p class="padding-1"> Tidak memiliki akun?
+                                <a href="#"> Kontak Administrator </a>
+                            </p>
+                        </div>
+                    
+                        <fieldset>
+                            <p class="padding-tb-1">
+                                <label for="username" class="padding-tb-half"> Username </label>
+                                <input type="text" class="default-input" />
+                            </p>
+                    
+                            <p class="padding-tb-1">
+                                <label for="email" class="padding-tb-half"> Email </label>
+                                <input type="email" class="default-input" />
+                            </p>
+                    
+                            <p class="d-block text-right">
+                                <a href="#">
+                                    Saya lupa password
+                                </a>
+                            </p>
+
+                            <p class="alert alert-danger margin-tb-1">
+                                Username atau Password tidak sesuai. 
+                            </p>
+                    
+                            <p class="d-block text-center padding-tb-2">
+                                <button class="c-btn c-default-btn"> Log In </button>
+                            </p>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function openNav() {
+            document.getElementById("navbar-expand").style.display = "block";
+            document.getElementById("navbar-expand").classList.add("show");
+        }
+
+
+        function closeNav() {
+            document.getElementById("navbar-expand").style.display = "none";
+            document.getElementById("navbar-expand").classList.remove("show");
+        }
+    </script>
+
+</body>
+
+</html>

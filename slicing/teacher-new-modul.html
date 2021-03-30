@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html id="html-cls">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title> Gakken Teacher Dashboard </title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link href="stylesheets/screen.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="modal fade" id="video-add" tabindex="-1" role="dialog" aria-labelledby="video-add" aria-hidden="true">
+        <div class="modal-dialog modal-lg elib-modal" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalVerticalLabel"> Tambah Video Pembelajaran </h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-block border-bottom padding-2"> 
+                        <p> Cari </p>
+                        <div class="d-block p-relative search-form">
+                            <input type="text" class="form-control" />
+                            <button class="search-btn">
+                                <i class="fa fa-search"> </i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="content grey-bg padding-2">
+                        <ul class="row margin-reset padding-reset"> 
+                            <li class="col-lg-4 col-md-6 col-6 padding-reset margin-reset">
+                                <input type="radio" name="radio-select" id="check-1" />
+                                <label for="check-1" class="border-box padding-half text-center border-radius margin-tb-half">
+                                    
+                                    <div class="img-cont padding-half">
+                                        <img src="assets/images/default-video.jpg" />
+                                    </div>
+   
+                                    <div class="padding-half">
+                                             Departemen </h6>
+                                    <p> Judul Video </p>
+                                        
+                                        </div>
+                                    <h6>                             </label>
+                            </li>
+
+                            <li class="col-lg-4 col-md-6 col-6 padding-reset margin-reset">
+                                <input type="radio" name="radio-select" id="check-2" />
+                                <label for="check-2" class="border-box padding-half text-center border-radius margin-tb-half" > 
+                                    
+                                    <div class="img-cont padding-half">
+                                        <img src="assets/images/video-example.png" />
+                                    </div>
+   
+                                    <div class="padding-half">
+                                             Departemen </h6>
+                                    <p> Judul Video </p>
+                                        
+                                        </div>
+                                    <h6>                             </label>
+                            </li>
+
+                            <li class="col-lg-4 col-md-6 col-6 padding-reset margin-reset">
+                                <input type="radio" name="radio-select" id="check-3" />
+                                <label for="check-3" class="border-box padding-half text-center border-radius margin-tb-half">
+                            
+                                    <div class="img-cont padding-half">
+                                        <img src="assets/images/default-video.jpg" />
+                                    </div>
+
+                                    <div class="padding-half">
+                                        <h6> Departemen </h6>
+                                        <p> Judul Video </p>
+                                    </div>
+                                    
+                                </label>
+                            </li>
+                            
+                            <li class="col-lg-4 col-md-6 col-6 padding-reset margin-reset">
+                                <input type="radio" name="radio-select" id="check-4" />
+                                <label for="check-4" class="border-box padding-half text-center border-radius margin-tb-half">
+                            
+                                    <div class="img-cont padding-half">
+                                        <img src="assets/images/video-example.png" />
+                                    </div>
+
+                                    <div class="padding-half">
+                                        <h6> Departemen </h6>
+                                        <p> Judul Video </p>
+                                    </div>
+                                    
+                                </label>
+                            </li>
+
+                            <li class="col-lg-4 col-md-6 col-6 padding-reset margin-reset">
+                                <input type="radio" name="radio-select" id="check-3" />
+                                <label for="check-3" class="border-box padding-half text-center border-radius margin-tb-half">
+                            
+                                    <div class="img-cont padding-half">
+                                        <img src="assets/images/default-video.jpg" />
+                                    </div>
+
+                                    <div class="padding-half">
+                                        <h6> Departemen </h6>
+                                        <p> Judul Video </p>
+                                    </div>
+                                    
+                                </label>
+                            </li>
+                            
+                            <li class="col-lg-4 col-md-6 col-6 padding-reset margin-reset">
+                                <input type="radio" name="radio-select" id="check-4" />
+                                <label for="check-4" class="border-box padding-half text-center border-radius margin-tb-half">
+                            
+                                    <div class="img-cont padding-half">
+                                        <img src="assets/images/video-example.png" />
+                                    </div>
+
+                                    <div class="padding-half">
+                                        <h6> Departemen </h6>
+                                        <p> Judul Video </p>
+                                    </div>
+                                    
+                                </label>
+                            </li>
+
+                            <li class="col-lg-4 col-md-6 col-6 padding-reset margin-reset">
+                                <input type="radio" name="radio-select" id="check-3" />
+                                <label for="check-3" class="border-box padding-half text-center border-radius margin-tb-half">
+                            
+                                    <div class="img-cont padding-half">
+                                        <img src="assets/images/default-video.jpg" />
+                                    </div>
+
+                                    <div class="padding-half">
+                                        <h6> Departemen </h6>
+                                        <p> Judul Video </p>
+                                    </div>
+                                    
+                                </label>
+                            </li>
+                            
+                            <li class="col-lg-4 col-md-6 col-6 padding-reset margin-reset">
+                                <input type="radio" name="radio-select" id="check-4" />
+                                <label for="check-4" class="border-box padding-half text-center border-radius margin-tb-half">
+                            
+                                    <div class="img-cont padding-half">
+                                        <img src="assets/images/video-example.png" />
+                                    </div>
+
+                                    <div class="padding-half">
+                                        <h6> Departemen </h6>
+                                        <p> Judul Video </p>
+                                    </div>
+                                    
+                                </label>
+                            </li>
+
+                            <li class="col-lg-4 col-md-6 col-6 padding-reset margin-reset">
+                                <input type="radio" name="radio-select" id="check-3" />
+                                <label for="check-3" class="border-box padding-half text-center border-radius margin-tb-half">
+                            
+                                    <div class="img-cont padding-half">
+                                        <img src="assets/images/default-video.jpg" />
+                                    </div>
+
+                                    <div class="padding-half">
+                                        <h6> Departemen </h6>
+                                        <p> Judul Video </p>
+                                    </div>
+                                    
+                                </label>
+                            </li>
+                            
+                            <li class="col-lg-4 col-md-6 col-6 padding-reset margin-reset">
+                                <input type="radio" name="radio-select" id="check-4" />
+                                <label for="check-4" class="border-box padding-half text-center border-radius margin-tb-half">
+                            
+                                    <div class="img-cont padding-half">
+                                        <img src="assets/images/video-example.png" />
+                                    </div>
+
+                                    <div class="padding-half">
+                                        <h6> Departemen </h6>
+                                        <p> Judul Video </p>
+                                    </div>
+                                    
+                                </label>
+                            </li>
+
+                            <li class="col-lg-4 col-md-6 col-6 padding-reset margin-reset">
+                                <input type="radio" name="radio-select" id="check-3" />
+                                <label for="check-3" class="border-box padding-half text-center border-radius margin-tb-half">
+                            
+                                    <div class="img-cont padding-half">
+                                        <img src="assets/images/default-video.jpg" />
+                                    </div>
+
+                                    <div class="padding-half">
+                                        <h6> Departemen </h6>
+                                        <p> Judul Video </p>
+                                    </div>
+                                    
+                                </label>
+                            </li>
+                            
+                            <li class="col-lg-4 col-md-6 col-6 padding-reset margin-reset">
+                                <input type="radio" name="radio-select" id="check-4" />
+                                <label for="check-4" class="border-box padding-half text-center border-radius margin-tb-half">
+                            
+                                    <div class="img-cont padding-half">
+                                        <img src="assets/images/video-example.png" />
+                                    </div>
+
+                                    <div class="padding-half">
+                                        <h6> Departemen </h6>
+                                        <p> Judul Video </p>
+                                    </div>
+                                    
+                                </label>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="d-block d-md-inline-block c-link secondary-text padding-1">
+                        Batalkan
+                    </a>
+                    
+                    <button class="c-btn c-default-btn">
+                        Simpan
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="journal-add" tabindex="-1" role="dialog" aria-labelledby="video-add" aria-hidden="true">
+        <div class="modal-dialog modal-lg elib-modal" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalVerticalLabel"> Tambah Video Pembelajaran </h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-block border-bottom padding-2">
+                        <p> Cari </p>
+                        <div class="d-block p-relative search-form">
+                            <input type="text" class="form-control" />
+                            <button class="search-btn">
+                                <i class="fa fa-search"> </i>
+                            </button>
+                        </div>
+                    </div>
+    
+                    <div class="content grey-bg padding-2">
+                        <ul class="row margin-reset padding-reset justify-content-start">
+                            <li class="col-lg-3 col-md-4 col-5 padding-reset margin-reset">
+                                <input type="radio" name="radio-select" id="check-1" />
+                                <label for="check-1" class="border-box text-center border-radius margin-tb-half">
+    
+                                    <div class="img-cont padding-half">
+                                        <img src="assets/images/default-journal.png" />
+                                    </div>
+
+                                    <div class="padding-half">
+                                        <h6> Departemen </h6>
+                                        <p> Judul Jurnal </p>
+                                    </div>
+                                    
+                                </label>
+                            </li>
+    
+                            <li class="col-lg-3 col-md-4 col-5 padding-reset margin-reset">
+                                <input type="radio" name="radio-select" id="check-2" />
+                                <label for="check-2" class="border-box text-center border-radius margin-tb-half">
+    
+                                    <div class="img-cont padding-half">
+                                        <img src="assets/images/journal-example.png" />
+                                    </div>
+
+                                    <div class="padding-half">
+                                        <h6> Departemen </h6>
+                                        <p> Judul Jurnal </p>
+                                    </div>
+                                    
+                                </label>
+                            </li>
+    
+                            <li class="col-lg-3 col-md-4 col-5 padding-reset margin-reset">
+                                <input type="radio" name="radio-select" id="check-3" />
+                                <label for="check-3" class="border-box text-center border-radius margin-tb-half">
+    
+                                    <div class="img-cont padding-half">
+                                        <img src="assets/images/default-journal.png" />
+                                    </div>
+
+                                    <div class="padding-half">
+                                        <h6> Departemen </h6>
+                                        <p> Judul Jurnal </p>
+                                    </div>
+                                    
+                                </label>
+                            </li>
+    
+                            <li class="col-lg-3 col-md-4 col-5 padding-reset margin-reset">
+                                <input type="radio" name="radio-select" id="check-4" />
+                                <label for="check-4" class="border-box text-center border-radius margin-tb-half">
+    
+                                    <div class="img-cont padding-half">
+                                        <img src="assets/images/journal-example.png" />
+                                    </div>
+
+                                    <div class="padding-half">
+                                        <h6> Departemen </h6>
+                                        <p> Judul Jurnal </p>
+                                    </div>
+                                    
+                                </label>
+                            </li>
+    
+                            <li class="col-lg-3 col-md-4 col-5 padding-reset margin-reset">
+                                <input type="radio" name="radio-select" id="check-3" />
+                                <label for="check-3" class="border-box text-center border-radius margin-tb-half">
+    
+                                    <div class="img-cont padding-half">
+                                        <img src="assets/images/default-journal.png" />
+                                    </div>
+
+                                    <div class="padding-half">
+                                        <h6> Departemen </h6>
+                                        <p> Judul Jurnal </p>
+                                    </div>
+                                    
+                                </label>
+                            </li>
+
+    
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="d-block d-md-inline-block c-link secondary-text padding-1">
+                        Batalkan
+                    </a>
+                    
+                    <button class="c-btn c-default-btn">
+                        Simpan
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light blue-top">
+        <div class="container-lg container-fluid">
+            <a class="navbar-brand padding-half d-inline-block" href="#">
+                <img src="assets/images/logo.png" class="small-logo" /> </a>
+            <a class="navbar-brand border-left padding-half d-inline-block" href="#">
+                <img src="assets/images/co-logo.png" class="small-logo" /> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse row justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav row align-items-center">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-bell notifications"> </i>
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle user row align-items-center" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <h6 class="padding-half"> FirstName Last </h6>
+                            <img src="assets/images/user-profile.png" height="30px" class="rounded-circle"
+                            />
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <a class="dropdown-item" href="#!">Action</a>
+                            <a class="dropdown-item" href="#!">Another action</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="content" class="grey-bg">
+        <div class="row no-gutters align-content-stretch min-100">
+            <div class="col-lg-2 col-md-3 dashboard-sidebar dashboard-sidebar-bg">
+                <ul>
+                    <li> <a href="#"> <i class="fa fa-eye"> </i> Summary </a></li>
+                    <li>
+                        <a href="#"> <i class="fa fa-clipboard-list"> </i> Atur Bahan Ajar </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-file"> </i> Tugas Mahasiswa </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-question-circle"> </i> Tes Soal </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-comment"> </i> Forum Diskusi Umum </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-comments"> </i> Forum Diskusi Dosen </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-folder"> </i> Direktori Saya </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-user-circle"> </i> Daftar Mahasiswa </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-user-plus"> </i> Daftar Dosen </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-9 col-lg-10 padding-tb-2 ">
+                <div class="d-block padding-2 text-left">
+                    <a href="#" class="link primary-link"> <i class="fa fa-angle-left"> </i> Kembali </a>
+                </div>
+
+                <div class="row margin-reset padding-reset modular-container">
+                    <div class="col-md-8 col-12"> 
+                        <div class="modular-wrapper white-bg border-box border-radius box-shadow padding-1 margin-tb-half">
+                            <h4 class="padding-tb-half"> Judul Bahan Ajar</h4>
+                            <input type="text" class="form-control"/>  
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-12">
+                        <div class="modular-wrapper white-bg border-box border-radius box-shadow padding-1 margin-tb-half">
+                            <h4 class="padding-tb-half"> Cover Modul </h4>
+                            <input type="file" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="modular-wrapper white-bg border-box border-radius box-shadow margin-tb-1 p-relative">
+
+                            <div class="row margin-reset padding-reset align-items-center">
+                                <h3 class="col-6 strong padding-1 margin-reset"> Konten </h3>
+                            </div>
+
+                            <ul class="d-block padding-1 add-on add-container">
+                                <li class="dropdown">    
+                                    <a href="#" class="d-block border-radius padding-1 new-add link primary-link" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-plus"> </i> Tambah Bahan Ajar </a> 
+                                    <div class="dropdown-menu box-shadow" aria-labelledby="dropdownMenu1">
+                                        <a class="dropdown-item" href="#!" data-toggle="modal" data-target="#video-add"> <i class="fa fa-file-video"> </i> Video Pembelajaran </a>
+                                        <a class="dropdown-item" href="#!" data-toggle="modal" data-target="#journal-add">
+                                            <i class="fa fa-file"> </i> Journal dari E-Library </a>
+                                        <a class="dropdown-item" href="#!">
+                                            <i class="fa fa-file-powerpoint"> </i>Presentasi </a>
+                                        <a class="dropdown-item" href="#!">
+                                            <i class="fa fa-list"> </i> Tes Soal </a>
+                                        <a class="dropdown-item" href="#!">
+                                            <i class="fa fa-file"> </i> Konten Lain </a>
+                                    </div>
+
+
+                                </li>
+                                <li>
+                                    <a href="#" class="a-style-1 d-block edit border-box border-radius box-shadow padding-1" data-toggle="modal" data-target="#video-add">
+                                        <div class="row padding-reset margin-reset">
+                                            <div class="img-cont padding-half">
+                                                <img src="assets/images/default-video.jpg" class="content-img" />
+                                            </div>
+                                            
+                                            <div class="padding-1">
+                                                <h6> Departemen </h6>
+                                                <p> Judul Video </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="a-style-1 d-block edit border-box border-radius box-shadow padding-1" data-toggle="modal" data-target="#journal-add">
+                                       <div class="row padding-reset margin-reset">
+                                            <div class="img-cont padding-half">
+                                                <img src="assets/images/default-journal.png" class="content-img"/>
+                                            </div>
+                                            
+                                            <div class="padding-1">
+                                                <h6> Departemen </h6>
+                                                <p> Judul Jurnal </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+
+                                    <div class="wrapper d-block edit border-box border-radius box-shadow padding-1">
+                                            
+                                        <ul>
+                                            <ol class="padding-half">
+                                                <div class="d-inline-block"> 
+                                                    <i class="fa fa-file-powerpoint"> </i> Presentasi.ppt
+                                                </div>
+
+                                                <a href="#" class="d-inline-block link orange-link text-small"> Hapus </a>
+                                            </ol>
+                                            <ol class="padding-half">
+                                                <div  class="d-inline-block">
+                                                    <i class="fa fa-file-powerpoint"> </i> Presentasi.ppt
+                                                </div>
+                                            
+                                                <a href="#" class="d-inline-block link orange-link text-small"> Hapus </a>
+                                            </ol>
+
+                                            <ol class="padding-half">
+                                                <div  class="d-inline-block">
+                                                    <i class="fa fa-file-powerpoint"> </i> Presentasi.ppt
+                                                </div>
+                                            
+                                                <a href="#" class="d-inline-block link orange-link text-small"> Hapus </a>
+                                            </ol>
+                                        </ul>
+
+                                        <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample" class="d-block link primary-link text-right">
+                                            <i class="fa fa-plus"> Tambah </i>
+                                        </a>
+
+                                    </div>
+
+                                    
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="card card-body medium-gray-bg">
+                                            <input type="file" class="form-control-file" id="exampleFormControlFile1" />
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class=" border-box border-radius box-shadow padding-1">
+                                        <a class="a-style-1 d-block edit padding-tb-half">
+                                            <i class="fa fa-file"> </i> Tes Soal 
+                                        </a>
+                                        
+
+                                        <h4 class="padding-tb-half strong "> Nama Tes </h4>
+                                        <p class="padding-tb-half"> Jumlah Soal 12 </p>
+                                        <p class="padding-tb-half"> Jenis Tes : Pilihan Ganda </p>
+                                        <p class="padding-tb-half"> 23 April 2018, 12:20 - 13 Mei 2018, 12:23 </p>
+
+                                        <a href="#" class="d-inline-block padding-1 link third-link" > <i class="fa fa-edit"> </i> Edit </a> <a href="#" class="d-inline-block padding-1 link danger-link" > <i class="fa fa-trash"> </i>Hapus </a>
+                                    </div>
+                                    
+                                </li>
+
+                                <li>
+                                    <a class="a-style-1 d-block edit border-box border-radius box-shadow padding-1" data-toggle="collapse" href="#anothercontent"
+                                        aria-expanded="false" aria-controls="anothercontent">
+                                        <i class="fa fa-file"> </i> Konten Lain </a>
+                                    </a>
+                                
+                                    <div class="collapse" id="anothercontent">
+                                        <div class="card card-body medium-gray-bg link primary-link">
+                                            <input type="file" class="form-control-file" id="exampleFormControlFile1" />
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="cta-btn w-100 padding-1 text-right">
+                                <a class="d-block d-md-inline-block c-link secondary-text padding-1">
+                                    Simpan Sementara
+                                </a>
+                        
+                                <button class="c-btn c-default-btn">
+                                    Simpan & Tampilkan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function openNav() {
+            document.getElementById("navbar-expand").style.display = "block";
+            document.getElementById("navbar-expand").classList.add("show");
+        }
+
+
+        function closeNav() {
+            document.getElementById("navbar-expand").style.display = "none";
+            document.getElementById("navbar-expand").classList.remove("show");
+        }
+    </script>
+
+</body>
+
+</html>

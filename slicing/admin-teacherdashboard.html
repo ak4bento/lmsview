@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html id="html-cls">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title> Gakken Teacher Dashboard </title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker3.min.css" />
+
+    <link href="stylesheets/screen.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div class="modal fade" id="yes-no-modal" tabindex="-1" role="dialog" aria-labelledby="yes-no-modal" aria-hidden="true">
+        <div class="modal-dialog modal-lg elib-modal" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalVerticalLabel"> Anda yakin? </h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="content padding-1 text-center">
+                        <p> Apakah Anda yakin ingin menghapus akun ini ? </p>
+                        <div class="padding-tb-1 text-center">
+                            <a class="link third-link padding-half" data-dismiss="modal" aria-label="Close">
+                                Ya
+                            </a>
+
+                            <button type="submit" class="btn btn-primary"> Tidak </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="change-setting-modal" tabindex="-1" role="dialog" aria-labelledby="change-setting-modal" aria-hidden="true">
+        <div class="modal-dialog modal-lg elib-modal" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalVerticalLabel"> User Setting </h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="content padding-1">
+                        <form>
+                            <div class="border-bottom">
+                                <p class="text primary-text text-upper small-text padding-tb-half"> Informasi Umum </p>
+                                <div class="form-group">
+                                    <label for="name">Nama </label>
+                                    <input type="text" class="form-control" id="name" placeholder="Nama Seseorang">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="name"> Fakultas </label>
+                                    <select class="form-control" id="name">
+                                        <option>Fakultas Kedokteran</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="nim"> NIM </label>
+                                    <input type="text" class="form-control" id="nim" placeholder="Nama Seseorang">
+                                </div>
+                            </div>
+
+                            <div class="padding-tb-1">
+                                <p class="text primary-text text-upper small-text padding-tb-half"> Akun </p>
+
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="text-small form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <a href="#" class="link secondary-link d-block"> Reset Password
+                                        <i class="fa fa-refresh"> </i>
+                                    </a>
+                                    <small class="text-small form-text text-muted"> Email reset password akan dikirimkan di email yang telah terdaftar diatas. </small>
+                                </div>
+                            </div>
+
+                            <div class="padding-tb-1 border-top">
+                                <a href="#" class="link danger-link" data-toggle="modal" data-target="#yes-no-modal">
+                                    <i class="fa fa-trash"> </i> Hapus Akun
+                                </a>
+                            </div>
+
+                            <div class="grey-bg text-right">
+
+                                <a class="link third-link padding-half" data-dismiss="modal" aria-label="Close">
+                                    Tutup
+                                </a>
+
+                                <button type="submit" class="btn btn-primary"> Simpan </button>
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="assign-class-modal" tabindex="-1" role="dialog" aria-labelledby="assign-class-modal" aria-hidden="true">
+        <div class="modal-dialog modal-lg elib-modal" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalVerticalLabel"> Cetak Laporan Mahasiswa </h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-block border-bottom padding-2">
+                        <p> Cari </p>
+                        <div class="d-block p-relative search-form">
+                            <input type="text" class="form-control" />
+                            <button class="search-btn">
+                                <i class="fa fa-search"> </i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="content grey-bg padding-2">
+                        <ul>
+                            <li class="white-bg border-bottom row margin-reset padding-reset align-items-center padding-1">
+                                <div class="col-md">
+                                    <p class="strong"> Nama Kelas 1 </p>
+                                </div>
+
+                                <div class="col-md text-right">
+                                    <a href="#" class="d-inline-block padding-half link primary-link small-text">
+                                        <i class="fa fa-plus"> </i> Assign
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="white-bg border-bottom row margin-reset padding-reset align-items-center padding-1">
+                                <div class="col-md">
+                                    <p class="strong"> Nama Kelas 1 </p>
+                                </div>
+
+                                <div class="col-md text-right">
+                                    <a href="#" class="d-inline-block padding-half link primary-link small-text">
+                                        <i class="fa fa-plus"> </i> Assign
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="white-bg border-bottom row margin-reset padding-reset align-items-center padding-1">
+                                <div class="col-md">
+                                    <p class="strong"> Nama Kelas 1 </p>
+                                </div>
+
+                                <div class="col-md text-right">
+                                    <a href="#" class="d-inline-block padding-half link third-link small-text">
+                                        <i class="fa fa-plus"> </i> Remove
+                                    </a>
+
+                                    <p class="strong d-inline-block padding-half text primary-text small-text">
+                                        <i class="fa fa-check"> </i> Assigned
+                                    </p>
+                                </div>
+                            </li>
+
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light blue-top">
+        <div class="container-lg container-fluid">
+            <a class="navbar-brand padding-half d-inline-block" href="#">
+                <img src="assets/images/logo.png" class="small-logo" /> </a>
+            <a class="navbar-brand border-left padding-half d-inline-block" href="#">
+                <img src="assets/images/co-logo.png" class="small-logo" /> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse row justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav row align-items-center">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-bell notifications"> </i>
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle user row align-items-center" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <h6 class="padding-half"> FirstName Last </h6>
+                            <img src="assets/images/user-profile.png" height="30px" class="rounded-circle" />
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <a class="dropdown-item" href="#!">Action</a>
+                            <a class="dropdown-item" href="#!">Another action</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="content" class="grey-bg">
+        <div class="row no-gutters align-content-stretch min-100">
+            <div class="col-lg-2 col-md-3 topic-sidebar topic-sidebar-bg">
+                <ul>
+                    <li class="slide-down-dropdown">
+                        <a href="#/">
+                            <i class="fa fa-bars"> </i> Daftar Mahasiswa </a>
+                    </li>
+                    <li>
+                        <a href="#" class="selected">
+                            <i class="fa fa-bars"> </i> Daftar Dosen </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-bars"> </i> Daftar Matakuliah </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-9 col-lg-10 padding-tb-2 ">
+                <div class="d-block padding-2 text-left">
+                    <a href="#" class="link primary-link">
+                        <i class="fa fa-angle-left"> </i> Kembali </a>
+
+                    <div class="border-bottom margin-tb-1 padding-1 row justify-content-center padding-reset margin-reset">
+                        <label class="col-6 margin-reset padding-reset">
+                            <span class="text secondary-text"> Search Member </span>
+                            <div class="margin-reset padding-reset d-flex flex-column">
+                                <input type="text" class="form-control border-radius" />
+                                <div class="padding-tb-1 d-block text-right">
+                                    <button class="c-btn c-default-btn primary-btn align-self-end small-text">
+                                        <i class="fa fa-search"> </i> Search
+                                    </button>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="padding-tb-1">
+
+                        <div class="padding-tb-1 d-block text-right">
+                            <button class="c-btn c-default-btn primary-btn align-self-end small-text">
+                                <i class="fa fa-plus"> </i> Tambah Akun Baru
+                            </button>
+                        </div>
+
+
+                        <table class="gk-table">
+                            <tr>
+                                <th class="text-center">
+                                    No
+                                </th>
+                                <th>
+                                    Nama
+                                </th>
+                                <th class="text-center">
+                                    NIK
+                                </th>
+
+                                <th>
+                                    Email
+                                </th>
+
+                                <th>
+
+                                </th>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    1
+                                </td>
+                                <td>
+                                    <div class="row margin-reset padding-reset">
+                                        <div class="d-inline-block">
+                                            <img src="assets/images/user-profile.png" width="50px" class="rounded-circle" />
+                                        </div>
+                                        <div class="col">
+                                            <p class="strong"> dr. User Name </p>
+                                            <p class="small-text text secondary-text"> f12345 </p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    F123456
+                                </td>
+
+                                <td>
+                                    johndoe@gmail.com
+                                </td>
+
+
+                                <td>
+                                    <div class="row justify-content-around align-items-center">
+                                        <a href="#" class="d-inline-block padding-half link third-link small-text" data-toggle="modal" data-target="#change-setting-modal">
+                                            <i class="fa fa-cog"> </i> Setting Akun </a>
+
+                                        <a href="#" class="d-inline-block padding-half link third-link small-text" data-toggle="modal" data-target="#assign-class-modal">
+                                            <i class="fa fa-square"> </i> Assign Class </a>
+
+                                        <div>
+                                            <a href="#" id="dropdownMenu1" class="d-inline-block padding-half link primary-link small-text dropdown-toggle" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                <i class="fa fa-print"> </i> Print Laporan </a>
+
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                <a class="dropdown-item" href="#!" data-toggle="modal" data-target="#assign-class-modal"> Print Laporan Aktifitas </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    1
+                                </td>
+                                <td>
+                                    <div class="row margin-reset padding-reset">
+                                        <div class="d-inline-block">
+                                            <img src="assets/images/user-profile.png" width="50px" class="rounded-circle" />
+                                        </div>
+                                        <div class="col">
+                                            <p class="strong"> dr. User Name </p>
+                                            <p class="small-text text secondary-text"> f12345 </p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    F123456
+                                </td>
+
+                                <td>
+                                    johndoe@gmail.com
+                                </td>
+
+
+                                <td>
+                                    <div class="row justify-content-around align-items-center">
+                                        <a href="#" class="d-inline-block padding-half link third-link small-text" data-toggle="modal" data-target="#change-setting-modal">
+                                            <i class="fa fa-cog"> </i> Setting Akun </a>
+
+                                        <a href="#" class="d-inline-block padding-half link third-link small-text" data-toggle="modal" data-target="#assign-class-modal">
+                                            <i class="fa fa-square"> </i> Assign Class </a>
+
+                                        <div>
+                                            <a href="#" id="dropdownMenu1" class="d-inline-block padding-half link primary-link small-text dropdown-toggle" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                <i class="fa fa-print"> </i> Print Laporan </a>
+
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                <a class="dropdown-item" href="#!" data-toggle="modal" data-target="#assign-class-modal"> Print Laporan Aktifitas </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+
+                        </table>
+
+                        <div class="loading-wrap align-items-center justify-content-center row padding-tb-2">
+                            <div class="loader"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.min.js"></script>
+
+    <script>
+        function openNav() {
+            document.getElementById("navbar-expand").style.display = "block";
+            document.getElementById("navbar-expand").classList.add("show");
+        }
+
+
+        function closeNav() {
+            document.getElementById("navbar-expand").style.display = "none";
+            document.getElementById("navbar-expand").classList.remove("show");
+        }
+
+        $('.datepicker').datepicker({
+            format: 'dd-mm-yyyy',
+            language: 'en'
+        });
+    </script>
+
+</body>
+
+</html>
